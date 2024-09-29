@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECE8E8"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:padding="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="71dp"
+                android:layout_height="63dp"
+                android:layout_gravity="start"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"/>
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/app_name"
+                android:textSize="30sp"
+                android:textColor="@android:color/black"
+                android:paddingEnd="16dp"/>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingTop="100dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="65dp">
+
+
+        <TextView
+            android:id="@+id/qst1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Le pattern MVC signifie :"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/rps11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiple Versions Combined" />
+
+        <CheckBox
+            android:id="@+id/rps12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Model View Controler" />
+
+        <CheckBox
+            android:id="@+id/rps13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Main Value Compliled" />
+
+        <CheckBox
+            android:id="@+id/rps14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mandatory Validated Controls" />
+
+        <TextView
+            android:id="@+id/qst2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. La syntax $[x] est permise dans une JSP :"
+            android:textSize="18sp"
+            android:paddingTop="50sp"/>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="109dp">
+
+            <RadioButton
+                android:id="@+id/rps21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OUI" />
+
+            <RadioButton
+                android:id="@+id/rps22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NON" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="250sp">
+
+            <Button
+                android:id="@+id/Quitter"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#F44336"
+                android:text="Quitter"
+                android:textSize="17sp"
+                android:layout_marginRight="78sp"/>
+
+            <Button
+                android:id="@+id/Suivant"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25sp"
+                android:backgroundTint="#4CAF50"
+                android:text="Suivant"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
