@@ -15,3 +15,17 @@ Voici une brève description des fichiers clés dans ce projet :
 - activity_third.xml : Interface utilisateur pour l'activité des résultats.
   
 Démo vidéo:
+
+https://github.com/user-attachments/assets/74d35ca1-415e-4ea6-98a6-f5cd99c0daac
+
+Instructions d'installation :
+
+- Clonez ce dépôt sur votre machine locale
+- Ouvrez le projet dans Android Studio.
+- Lancez l'application sur un émulateur ou un appareil Android physique.
+
+Dépendances :
+- Java : Version 8 ou supérieure.
+- Android Studio : Version 4.0 ou supérieure.
+
+Contributeurs : Yasmine FIHRI
